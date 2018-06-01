@@ -10,9 +10,9 @@ RUN python -c "import nltk; nltk.download('punkt')"
 
 RUN git clone https://github.com/junuwang/NAMAS
 
-RUN cd NAMAS
-
 RUN git clone https://github.com/junuwang/trained-ABS-model
+
+RUN chmod +x /root/trained-ABS-model/download-script.sh
 
 RUN ./trained-ABS-model/download-script.sh
 
